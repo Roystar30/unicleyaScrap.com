@@ -18,45 +18,48 @@ header {
 header h1 {
   font-size: 2rem;
 }
-.menu-toggle {
-  position: absolute;
-  top: 1.2rem;
-  left: 1rem;
-  background-color: #ff6f61;
-  border: none;
-  padding: 0.5rem 1rem;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1001;
-}
-nav {
+#sideNav {
   position: fixed;
   top: 0;
-  left: -200px;
-  width: 200px;
+  left: -250px;
+  width: 250px;
   height: 100%;
-  background-color: #222;
-  padding-top: 5rem;
+  background-color: wheater;
+  background: linear-gradient(to bottom, #b0cbd2, #1c508b);
+  box-shadow: 2px 0 5px rgba(73, 46, 46, 0.5);
+  z-index: 1000;
+  padding: 20px;
+  font-size: 1.2rem;  line-height: 1.5;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 20px;
   transition: left 0.3s ease;
-  z-index: 1000;
 }
-nav.open {
-  left: 0;
-}
-nav a {
+
+#sideNav a {
   color: white;
   text-decoration: none;
-  margin: 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
+  margin: 10px 0;
 }
-nav a:hover {
-  color: #ff6f61;
+
+#sideNav.open {
+  left: 0;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.menu-toggle:focus {
+  outline: none;
 }
 .hero {
   text-align: center;
